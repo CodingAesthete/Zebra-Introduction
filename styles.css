@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  padding: 100px 0;
+  background-image: url('https://cdn.pixabay.com/photo/2022/09/19/20/20/zebras-7466400_1280.jpg');
+  background-size: cover;
+  font-family: Arial;
+  color: #333;
+}
+
+#tabs {
+  width: 512px;
+  margin: auto;
+
+}
+
+#tabs>ul{
+  list-style-type: none;
+  display:flex;
+}
+
+#tabs>ul>li>a {
+  display:block;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 2px;
+  background: #121374;
+  color: white;
+  text-decoration: none;
+  padding: 0 11px;
+  border-radius: 3px 3px 0 0;
+}
+
+#tabs > div {
+  padding: 15px;
+  background: rgb(58, 15, 15);
+  color:white;
+  line-height: 22px;
+  text-align: justify;
+  transition: opacity 200ms linear;
+}
+
+#tabs .active {
+  background: #585afd;
+}
+
+#tabs .hidden{
+  display: none;
+}
+
+#tabs .visible{
+  display: block;
+}
+
+#tabs .visuallyhidden {
+  opacity: 0;
+}
